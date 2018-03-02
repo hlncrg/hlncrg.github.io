@@ -2,8 +2,8 @@
 permalink:           pretty
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
+title:               Helen Craig
+tagline:             Random Notes
 url:                 http://getpoole.com
 paginate:            1
 baseurl:             ""
@@ -17,14 +17,20 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Helen Craig
+  url:               https://www.linkedin.com/in/hacraig/
 
 # Custom vars
 version:             2.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:              github.com/hlncrg/hlncrg.github.io
+
+# This is the list of pages to include in the header of the website.
+pages_list:       
+  About: '/about/'
+  Archive: '/archive/'
+  Feed: '/atom.xml'
+
 
 # Gems
 gems:
