@@ -4,9 +4,9 @@ permalink:           pretty
 # Setup
 title:               Helen Craig
 tagline:             Random Notes
-url:                 http://getpoole.com
+url:                 "github.com/hlncrg/hlncrg.github.io"
 paginate:            1
-baseurl:             "http://hlncrg.github.io/"
+baseurl:             "github.com/hlncrg/hlncrg.github.io/"
 
 # Assets
 #
