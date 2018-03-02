@@ -20,5 +20,5 @@ to minimize the entropy in the encoding.
 In order to understand entropy on more than a superficial level, we first need a basic
 understanding of different ways to encode information or data. 
 
-![tree and entropy](/images/TreeAndEntropy.png) 
+![tree and entropy](https://github.com/hlncrg/hlncrg.github.io/blob/master/_posts/images/TreeAndEntropy.png) 
 
