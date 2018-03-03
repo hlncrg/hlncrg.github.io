@@ -30,6 +30,9 @@ pages_list:
   About: '/about/'
   Archive: '/archive/'
 
+# use the maruku processor
+markdown: maruku
+
 
 # Gems
 gems:
