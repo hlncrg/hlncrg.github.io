@@ -18,5 +18,5 @@ How to choose k out of n items:
 
 ||order|no order|
 |-|-|-|
-|w replacement|$n^k$|\frac{(n+k-1)!}{(n-1)!(k)!} = \binom{n+k-1}{k}|
-|w/o replacement|\frac{n!}{(n-k)!}|\frac{n!}{k!(n-k)!} = \binom{n}{k}|
+|w replacement|$$n^k$$|$$\frac{(n+k-1)!}{(n-1)!(k)!} = \binom{n+k-1}{k}$$|
+|w/o replacement|$$\frac{n!}{(n-k)!}$$|$$\frac{n!}{k!(n-k)!} = \binom{n}{k}$$|
