@@ -30,5 +30,5 @@ trees have one extra node that is unneccessary and therefore has more entropy.
 
 Now that we have a visual representation of entropy, let's talk about formulas.
 
-Entropy is defined as $Entropy(X)=\sum P(x_i)\log_2 P(x_i)$
+Entropy is defined as $$Entropy(X)=\sum P(x_i)\log_2 P(x_i)$$
 
