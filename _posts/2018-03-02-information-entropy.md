@@ -39,12 +39,38 @@ Walking through the tree in depth first order we get:
 |0(A)|1(C)|
 |0(A)|0(C)|
 
+
+
 Now that we have a visual representation of entropy and 
 used the same systems to illustrate the use of bits 
 to encode, let's talk about formulas.
+
+# Entropy of the system
 
 Entropy is defined as $Entropy(X)=\sum P(x_i)\log_2 P(x_i)$ where $P(x_i)$ is 
 the probability of an outcome and $\log_2 P(x_i)$ is the number of bits
 need to encode the outcome.  In other words, this is the expectation 
 value of the number of bits needed to encode the information.  
 
+To apply this formula we need one more component, the probabilities of each
+combinations.  Here is a table of the combinations:
+
+|A|B|C||
+|-|-|-|-|
+|1|1|1|T|
+|1|1|0|T|
+|1|0|1|T|
+|1|0|0|F|
+|0|1|1|F|
+|0|1|0|F|
+|0|0|1|F|
+|0|0|0|F|
+
+We have been implicitly assuming that each of these cases is equally likely.
+We can think of this table as our training set essentially.
+
+First we calculate the entropy without any splits.  The probability of a true
+is 3 out of 8 and the probability of a false is a 5 out of 8. 
+The entropy is therefore $-3/8\log(3/8)-5/8\log(5/8)=0.66$. 
+
+ 
