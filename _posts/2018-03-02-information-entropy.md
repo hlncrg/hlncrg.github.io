@@ -47,8 +47,8 @@ to encode, let's talk about formulas.
 
 # Entropy of the system
 
-Entropy is defined as \(Entropy(X)=\sum P(x_i)\log_2 P(x_i)\) where $P(x_i)$ is 
-the probability of an outcome and $\log_2 P(x_i)$ is the number of bits
+Entropy is defined as \\(Entropy(X)=\sum P(x_i)\log_2 P(x_i)\\) where $P(x_i)$ is 
+the probability of an outcome and $$\log_2 P(x_i)$$ is the number of bits
 need to encode the outcome.  In other words, this is the expectation 
 value of the number of bits needed to encode the information.  
 
