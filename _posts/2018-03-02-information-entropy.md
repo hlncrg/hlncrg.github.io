@@ -28,7 +28,23 @@ These trees represent the boolean function (A and B) or (A and C).  The first tr
 is as small as possible and encodes the information in a compact form.  The other
 trees have one extra node that is unneccessary and therefore has more entropy.
 
-Now that we have a visual representation of entropy, let's talk about formulas.
+Next let's talk about encoding these systems using bits.  Each bit is 
+a node and 'yes' is encoded as 1 while 'no' is encoded as 0.  For 
+the simplest tree, what are the combinations?  
 
-Entropy is defined as $$Entropy(X)=\sum P(x_i)\log_2 P(x_i)$$
+Walking through the tree in depth first order we get:
+
+|1(A)|1(B)|
+|1(A)|0(B)|
+|0(A)|1(C)|
+|0(A)|0(C)|
+
+Now that we have a visual representation of entropy and 
+used the same systems to illustrate the use of bits 
+to encode, let's talk about formulas.
+
+Entropy is defined as $Entropy(X)=\sum P(x_i)\log_2 P(x_i)$ where $P(x_i)$ is 
+the probability of an outcome and $\log_2 P(x_i)$ is the number of bits
+need to encode the outcome.  In other words, this is the expectation 
+value of the number of bits needed to encode the information.  
 
