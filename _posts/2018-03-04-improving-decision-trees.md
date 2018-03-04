@@ -18,3 +18,6 @@ From Wikipedia:
 * Handling attributes with differing costs.
 * Pruning trees after creation - C4.5 goes back through the tree once it's been created 
     and attempts to remove branches that do not help by replacing them with leaf nodes.
+
+References:
+https://books.google.com/books?id=b3ujBQAAQBAJ&printsec=frontcover#v=onepage&q&f=false
