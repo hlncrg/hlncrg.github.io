@@ -26,28 +26,21 @@ Let's start with a tree-based example.
 
 These trees represent the boolean function (A and B) or (A and C).  The first tree 
 is as small as possible and encodes the information in a compact form.  The other
-trees have one extra node that is unneccessary and therefore has more entropy.
+trees have one extra node that is unneccessary.
 
-Next let's talk about encoding these systems using bits.  Each bit is 
-a node and 'yes' is encoded as 1 while 'no' is encoded as 0.  For 
-the simplest tree, what are the combinations?  
-
-Walking through the tree in depth first order we get:
-
-|1(A)|1(B)|
-|1(A)|0(B)|
-|0(A)|1(C)|
-|0(A)|0(C)|
+In term of computation, having a larger tree is bad because is requires more steps
+to calculate.  In terms of data, A is the most informative element and
+asking what its value is first makes us come to a conclusion faster on
+average.  A fancier way of saying this is that few bits are needed to 
+store the same information.
 
 
-
-Now that we have a visual representation of entropy and 
-used the same systems to illustrate the use of bits 
-to encode, let's talk about formulas.
+Now that we have a visual representation of information
+let's talk about formulas.
 
 # Entropy of the system
 
-Entropy is defined as \\(Entropy(X)=\sum P(x_i)\log_2 P(x_i)\\) where $P(x_i)$ is 
+Entropy is defined as $$Entropy(X)=\sum P(x_i)\log_2 P(x_i)$$ where $$P(x_i)$$ is 
 the probability of an outcome and $$\log_2 P(x_i)$$ is the number of bits
 need to encode the outcome.  In other words, this is the expectation 
 value of the number of bits needed to encode the information.  
@@ -71,6 +64,11 @@ We can think of this table as our training set essentially.
 
 First we calculate the entropy without any splits.  The probability of a true
 is 3 out of 8 and the probability of a false is a 5 out of 8. 
-The entropy is therefore $-3/8\log(3/8)-5/8\log(5/8)=0.66$. 
+The entropy is therefore $$-3/8\log(3/8)-5/8\log(5/8)=0.66$$. 
+If the probability had been 50/50 then the entropy would be 1 and
+we would need to 
 
- 
+# References
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eLlYSpVjH94" 
+frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
