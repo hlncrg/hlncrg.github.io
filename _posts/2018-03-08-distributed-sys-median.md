@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blogs to Watch 
+title: Median in Distributed System 
 ---
 
 Calculate a median from a number of arrays
